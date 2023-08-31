@@ -57,10 +57,10 @@ li{
 
 .visitor-counter{
   padding:1rem;
+  display: flex;
 }
 
 .visitor-counter, .visitor-counter h2{
-  display: flex;
   font-size: 0.875rem;
 }
 
@@ -471,6 +471,23 @@ nav .logo-container img{
   background-color:var(--quinary-color);
 }
 
+
+@media only screen and (max-width: 543px) { 
+
+
+  header .visitor-counter{
+    flex-direction: column;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    height: 100vh;
+    width: 80%;
+  }
+
+  header .vc-lists{
+    flex-direction: column;
+    height: 100%;
+  }
+}
 
 
 
