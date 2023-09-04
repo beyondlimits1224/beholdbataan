@@ -57,6 +57,7 @@ header{
 .visitor-counter{
   display: flex;
   align-items: center;
+  
 }
 
 .visitor-counter .visitor-title{
@@ -64,6 +65,7 @@ header{
   font-size: var(--default-font-size);
   font-family: var(--secondary-font-family);
   font-weight: 600;
+  color: var(--primary-color);
 }
 
 .visitor{
@@ -81,6 +83,7 @@ header{
   font-family: var(--secondary-font-family);
   display: flex;
   margin: 0 0 0 1rem;
+  color: var(--primary-color);
 
 }
 
@@ -100,7 +103,11 @@ header{
 .eye{
   display: none;
   cursor: pointer;
+  
+}
 
+.eye i, .eye .title{
+  color:var(--primary-color);
 }
 
 
@@ -165,6 +172,7 @@ header{
 
   .visitor-list .item{
     text-align: center;
+    color: var(--secondary-color);
   }
 
   .visitor-list span{
@@ -203,12 +211,13 @@ nav{
 .logo a{
   display: flex;
   align-items: center;
+
 }
 
 .logo a h1{
   font-size: 1rem;
   font-weight: 400;
-  color:var(--secondary-color);
+  color:var(--primary-color);
 }
 
 .navmenu .navlist{
@@ -222,12 +231,14 @@ nav{
 }
 
 .navmenu .navitem .navlink{
-  color: var(--secondary-color);
+  color: var(--primary-color);
+  opacity: 0.5;
 }
 
 .bar{
   display: none;
   cursor: pointer;
+  color: var(--primary-color);
 }
 
 nav .close{
@@ -265,6 +276,10 @@ nav .close{
     margin: 0 0 2rem 0;
   }
 
+  .navmenu .navlist .navitem .navlink{
+    color:var(--secondary-color);
+  }
+
   .navmenu .navlist .navitem .navlink::after{
     content: "";
     display: block;
@@ -275,6 +290,7 @@ nav .close{
     right: 0;
     margin:1rem auto;
     position: absolute;
+  
     
   }
 
@@ -300,32 +316,43 @@ main{
 
 .hero{
   width:100%;
-  overflow: hidden;
   position: relative;
 }
 
 .slide{
   width:100%;
-  overflow: hidden;
-  
+  position: absolute;
+}
+
+.slide .slide-detail{
+  display: flex;
+  position: absolute;
+  top:0;
+  bottom:0;
+  align-items: center;
+  width: 60%;
+  justify-content: space-between;
+  left:0;
+  right: 0;
+  margin: auto;
 
 }
 
 .slide .col-left{
-  position: absolute;
 }
 
 .slide .col-right{
-  position: absolute;
 }
 
-
-.slide .img-bg-slide{
-  width: 100%;
+.col-right .thumbnail-img{
+  width: 400px;
+  height: 400px;
+  background-color: #5B58FB;
 }
+
 
 .slide-navigation{
-  position:absolute;
+  position: absolute;
 }
 
 .img-bg-slide{
