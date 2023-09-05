@@ -317,6 +317,8 @@ main{
 .hero{
   width:100%;
   position: relative;
+  height: 800px;
+  overflow: hidden;
 }
 
 .slide{
@@ -339,9 +341,23 @@ main{
 }
 
 .slide .col-left{
+  display: block;
+}
+
+.slide .col-left .featured{
+  display: inline-block;
+  color: var(--primary-color);
+  font-family: var(--secondary-font-family);
+  background-color: var(--tertiary-color);
+  padding: 0.5rem 1rem;
+}
+
+.slide .col-left .hero-title{
+  color: var(--primary-color);
 }
 
 .slide .col-right{
+  background-color: var(--tertiary-color);
 }
 
 .col-right .thumbnail-img{
@@ -350,6 +366,14 @@ main{
   background-color: #5B58FB;
 }
 
+
+.social-media{
+  position: absolute;
+  bottom: 0;
+  right:0;
+  background-color: #FBFF3D;
+  margin: 0 4rem 4rem 0;
+}
 
 .slide-navigation{
   position: absolute;
