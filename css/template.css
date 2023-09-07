@@ -227,7 +227,6 @@ nav{
 .navlist{
   display: flex;
   font-family: var(--secondary-font-family);
-  text-transform: uppercase;
 }
 
 .navitem:not(:last-child){
@@ -415,9 +414,10 @@ main{
 }
 
 .col-right .thumbnail-img{
+  position: relative;
+  overflow: hidden;
   width: 400px;
   height: 400px;
-  background-color: #5B58FB;
 }
 
 
@@ -527,7 +527,8 @@ main{
 
   .col-right .thumbnail-img{
     width: 300px;
-  height: 300px;
+    height: 300px;
+
   }
 
  
