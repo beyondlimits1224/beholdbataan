@@ -440,27 +440,40 @@ main{
   padding: 1rem;
   border: 0;
   border-radius: 100%;
-  transition: background-color 0.5s ease-in;
 }
 
+.social-list .s-ig:hover{
+  transition: background-color 0.5s ease-in;
+  background-color: #f09433;
+}
 
-.social-list .items:hover{
-  background-color: var(--quinary-color);
-  
+.social-list .s-yt:hover{
+  transition: background-color 0.5s ease-in;
+  background-color: #ff0000;
+}
+
+.social-list .s-twitter:hover{
+  transition: background-color 0.5s ease-in;
+  background-color: #1da1f2;
+}
+
+.social-list .s-fb:hover{
+  transition: background-color 0.5s ease-in;
+  background-color:#3b5998 ;
 }
 
 .social-list .items:not(:last-child){
   margin: 0 0 1rem 0;
 }
 
-.social-list .items a i{
+.social-list .items a{
   color: var(--tertiary-color);
-  transition: color 0.5s ease-in;
-}
-.social-list .items a i:hover{
-  color: var(--primary-color);
 }
 
+.social-list .items a:hover{
+  transition: color 0.5s ease-in;
+  color:var(--primary-color);
+}
 
 
 
@@ -484,6 +497,26 @@ main{
   text-align: center;
   color:var(--primary-color);
   margin:0 0 4rem 0;
+}
+
+.dot{
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot:hover{
+  background-color:var(--primary-color);
+  transition: background-color 0.5s ease;
+  
+}
+
+.dotActive {
+  background-color: var(--primary-color);
 }
 
 @media only screen and (max-width: 1080px){
