@@ -420,6 +420,10 @@ main{
   height: 400px;
 }
 
+.col-right .thumbnail-img img{
+  width: 100%;
+}
+
 
 .social-media{
   position: absolute;
@@ -531,8 +535,6 @@ main{
 
   }
 
- 
-
   .featured{
     margin: 3rem 0 0 0;
   }
@@ -552,4 +554,26 @@ main{
     font-size: 2rem;
   }
 
+}
+
+@media only screen and (max-width: 924px){
+  .slide-navigation{
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 900px){
+  .col-right .thumbnail-img{
+    width: 250px;
+    height: 250px;
+  }
+
+  .slide .col-left .hero-title{
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  .slide .col-left .small-title{
+    font-size: 1.5rem;
+  }
 }
