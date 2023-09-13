@@ -10,6 +10,7 @@
   --quinary-color: #5b58fb;
   --senary-color: #f1eeee;
   --septenary-color: #0906a3;
+  --logo-color: #b8b8fa;
 }
 
 *,
@@ -50,131 +51,6 @@ header {
   z-index: 1;
 }
 
-/* Visitor Counter */
-.visitor-counter {
-  display: flex;
-  align-items: center;
-}
-
-.visitor-title {
-  display: inline;
-  font-size: var(--default-font-size);
-  font-family: var(--secondary-font-family);
-  font-weight: 600;
-  color: var(--primary-color);
-}
-
-.visitor {
-  display: flex;
-  align-items: center;
-}
-
-.visitor .close {
-  display: none;
-  cursor: pointer;
-}
-
-.visitor-list {
-  font-family: var(--secondary-font-family);
-  display: flex;
-  margin: 0 0 0 1rem;
-  color: var(--primary-color);
-}
-
-.visitor-list .item {
-  font-weight: 300;
-}
-
-.visitor-list .item:not(:last-child) {
-  margin: 0 1rem 0 0;
-}
-
-.visitor-list .item span {
-  font-weight: 500;
-}
-
-.eye {
-  display: none;
-  cursor: pointer;
-}
-
-.eye i,
-.eye .title {
-  color: var(--primary-color);
-}
-
-@media only screen and (max-width: 726px) {
-  .eye {
-    display: flex;
-    align-items: center;
-  }
-
-  .eye .title {
-    margin: 0 0 0 0.3rem;
-    font-weight: 600;
-    font-family: var(--secondary-font-family);
-    font-size: var(--default-font-size);
-  }
-
-  .visitor {
-    transform: translateX(-100%);
-    -o-transform: translate(-100%);
-    -moz-transform: translate(-100%);
-    -webkit-transform: translate(-100%);
-    background-color: var(--primary-color);
-    flex-direction: column;
-    position: fixed;
-    margin: 0;
-    left: 0;
-    top: 0;
-    padding: 0;
-    height: 100vh;
-    width: 80%;
-    transition: transform 0.5s ease-in;
-  }
-
-  .visitor-active {
-    transform: translateX(0);
-  }
-
-  .visitor .close {
-    display: inline-block;
-    position: absolute;
-    left: 0;
-    padding: 1rem 0 0 2rem;
-  }
-
-  .visitor-title {
-    margin: 4rem 0 0 0;
-    font-size: 1.8rem;
-  }
-
-  .visitor-list {
-    flex-direction: column;
-    font-size: 1.5rem;
-    margin: 2rem 0 0 0;
-  }
-
-  .visitor-list .item:not(:last-child) {
-    margin: 0 0 1rem 0;
-  }
-
-  .visitor-list .item {
-    text-align: center;
-    color: var(--secondary-color);
-  }
-
-  .visitor-list span {
-    display: block;
-  }
-}
-
-@media only screen and (max-width: 322px) {
-  .visitor {
-    width: 100%;
-  }
-}
-
 /* Nav */
 
 nav {
@@ -200,7 +76,7 @@ nav {
 .logo a h1 {
   font-size: 1rem;
   font-weight: 400;
-  color: var(--primary-color);
+  color: var(--logo-color);
 }
 
 .navlist {
