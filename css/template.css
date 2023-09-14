@@ -193,6 +193,14 @@ main {
   position: absolute;
 }
 
+.slide:not(.slide-active) {
+  top: 0;
+  left: -100%;
+}
+
+.slide-active {
+}
+
 .slide-detail {
   display: flex;
   position: absolute;
@@ -393,6 +401,42 @@ main {
 
   .small-title {
     font-size: 2rem;
+  }
+}
+
+@keyframes next1 {
+  from {
+    left: 0%;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@keyframes next2 {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0%;
+  }
+}
+
+@keyframes prev1 {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0%;
+  }
+}
+
+@keyframes prev2 {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0%;
   }
 }
 

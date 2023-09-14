@@ -68,7 +68,7 @@
     <main>
       <section class="hero">
         <!-- Slide 1 -->
-        <div class="slide">
+        <div class="slide slide-active">
           <div class="slide-detail">
             <div class="col-left">
               <div class="featured">Featured</div>
@@ -159,9 +159,13 @@
         </div>
         <!-- Hero Slide Navigation Button -->
         <div class="slide-navigation">
-          <span class="dot dotActive"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
+          <span
+            class="dot dotActive"
+            attr="0"
+            onclick="switchImage(this)"
+          ></span>
+          <span class="dot" attr="1" onclick="switchSlide(this)"></span>
+          <span class="dot" attr="2" onclick="switchSlide(this)"></span>
         </div>
       </section>
     </main>
