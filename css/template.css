@@ -424,10 +424,10 @@ main {
 
 @keyframes prev1 {
   from {
-    left: 100%;
+    left: 0%;
   }
   to {
-    left: 0%;
+    left: 100%;
   }
 }
 
