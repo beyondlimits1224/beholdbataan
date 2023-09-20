@@ -527,3 +527,42 @@ main {
     font-size: 1rem;
   }
 }
+
+.business-directories {
+  width: 100%;
+  position: relative;
+  padding: 2rem 0;
+}
+
+.directories-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: fit-content;
+  margin: auto;
+  color: var(--tertiary-color);
+  justify-content: center;
+}
+
+.directories-list .item:not(:last-child):after {
+  content: "|";
+  margin: 0 0.5rem;
+}
+
+.directories-list .item a {
+  color: var(--tertiary-color);
+  transition: color 0.5s ease-in;
+}
+
+.directories-list .item a:hover {
+  color: var(--secondary-color);
+}
+
+.directories-list .item a.active {
+  color: var(--secondary-color) !important;
+}
+
+@media only screen and (max-width: 590px) {
+  .directories-list {
+    font-size: 0.8rem;
+  }
+}
