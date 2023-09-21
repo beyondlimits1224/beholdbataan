@@ -566,3 +566,37 @@ main {
     font-size: 0.8rem;
   }
 }
+
+/* Search */
+.search {
+  width: 100%;
+  position: relative;
+}
+
+.searchform {
+  width: fit-content;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.searchInput {
+  font-family: var(--primary-font-family);
+  padding: 0.5rem 1rem;
+  border: 0;
+  border-radius: 16px;
+  width: 60vmin;
+}
+
+.btnSearch {
+  border: 0;
+  position: absolute;
+  background-color: transparent;
+  right: 10px;
+}
+
+.btnSearch i {
+  color: var(--tertiary-color);
+  cursor: pointer;
+}
