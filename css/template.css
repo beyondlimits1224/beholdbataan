@@ -603,7 +603,7 @@ main {
 
 /* Visitor Counter */
 .visitor-counter {
-  width: fit-content;
+  width: 100%;
   margin: 2rem auto 0 auto;
 }
 
@@ -643,4 +643,13 @@ main {
   .vc-list .item {
     font-size: 1rem;
   }
+}
+
+/* Showcase */
+.showcase {
+  background-color: white;
+  width: 100%;
+  height: 500px;
+  margin: 4rem 0 0 0;
+  position: relative;
 }
