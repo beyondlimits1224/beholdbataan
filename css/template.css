@@ -600,3 +600,47 @@ main {
   color: var(--tertiary-color);
   cursor: pointer;
 }
+
+/* Visitor Counter */
+.visitor-counter {
+  width: fit-content;
+  margin: 2rem auto 0 auto;
+}
+
+.visitor-counter h2 {
+  font-weight: 400;
+  font-size: 2rem;
+  text-align: center;
+  color: var(--secondary-color);
+}
+
+.vc-list {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.vc-list .item {
+  font-size: 1.8rem;
+  font-weight: 100;
+}
+
+.vc-list .item:not(:last-child) {
+  margin: 0 1rem 0 0;
+}
+
+.vc-list .item .total {
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 830px) {
+  .vc-list .item {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .vc-list .item {
+    font-size: 1rem;
+  }
+}
