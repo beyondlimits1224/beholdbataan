@@ -700,3 +700,12 @@ main {
     height: 280px;
   }
 }
+
+@media only screen and (max-width: 690px) {
+  .didyouknow,
+  .flash-article,
+  .upcoming-events {
+    width: 150px;
+    height: 210px;
+  }
+}
